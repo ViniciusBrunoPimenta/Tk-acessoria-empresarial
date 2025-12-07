@@ -1,0 +1,16 @@
+INSTRUÇÕES PARA ADICIONAR A IMAGEM DO HERO
+===========================================
+
+1. Salve a imagem do design dourado/preto/grafite na pasta "assets"
+2. Nomeie o arquivo como: "hero-background.jpg" (ou .png)
+3. O CSS já está configurado para usar: assets/hero-background.jpg
+
+Se você usar outro nome ou formato:
+- Abra o arquivo: css/style.css
+- Procure por: background-image: url('../assets/hero-background.jpg');
+- Altere para o nome do seu arquivo
+
+Formatos aceitos: .jpg, .jpeg, .png, .webp
+
+A imagem será usada como fundo da seção Hero (tela inicial).
+

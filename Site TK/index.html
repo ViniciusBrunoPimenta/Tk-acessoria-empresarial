@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK Assessoria Empresarial - Soluções contábeis com excelência</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="smooth-scroll bg-white">
+    
+    <!-- NAVBAR FIXO -->
+    <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="assets/logo-tk.png" alt="TK Assessoria Empresarial" class="navbar-logo" id="logo-img" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';">
+                    <h1 class="text-2xl font-bold text-gold" id="logo-text" style="display: none;">TK</h1>
+                    <span class="text-sm font-semibold text-graphite hidden sm:inline">Assessoria Empresarial</span>
+                </div>
+                
+                <!-- Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="font-medium">Home</a>
+                    <a href="#servicos" class="font-medium">Serviços</a>
+                    <a href="#sobre" class="font-medium">Sobre Nós</a>
+                    <a href="#contato" class="font-medium">Contato</a>
+                </div>
+                
+                <!-- Menu Mobile -->
+                <button id="mobile-menu-btn" class="md:hidden text-graphite">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Menu Mobile Expandido -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2">Home</a>
+                <a href="#servicos" class="block py-2">Serviços</a>
+                <a href="#sobre" class="block py-2">Sobre Nós</a>
+                <a href="#contato" class="block py-2">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO 1 - HERO -->
+    <section id="home" class="pt-32 pb-20 bg-white min-h-screen flex items-center relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="text-graphite">TK Contabilidade</span><br>
+                    <span class="text-gold gold-glow">Empresarial</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed font-light">
+                    Cuidando da sua empresa com <span class="font-semibold text-gold">precisão</span>, 
+                    <span class="font-semibold text-gold">transparência</span> e 
+                    <span class="font-semibold text-gold">confiança</span>.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/5543999951500?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20TK%20Contabilidade." 
+                       target="_blank"
+                       class="btn-whats">
+                        <i class="fab fa-whatsapp mr-2"></i> Fale no WhatsApp
+                    </a>
+                    <a href="#servicos" 
+                       class="btn-gold">
+                        Conheça nossos serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2 - NOSSOS SERVIÇOS -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="section-title text-4xl md:text-5xl mb-4">Nossos <span class="section-title-gold">Serviços</span></h2>
+                <div class="gold-line"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto mt-6">
+                    Soluções completas para o sucesso da sua empresa
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="service-card card-hover p-8 rounded-xl fade-in">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-building service-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-graphite mb-3">Abertura de Empresas</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Processo completo de abertura de empresa, desde a escolha do melhor enquadramento até a obtenção de todas as licenças necessárias.
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="service-card card-hover p-8 rounded-xl fade-in">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-chart-line service-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-graphite mb-3">Departamento Fiscal</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Gestão completa de obrigações fiscais, apuração de impostos e entrega de declarações dentro dos prazos legais.
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="service-card card-hover p-8 rounded-xl fade-in">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-file-invoice-dollar service-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-graphite mb-3">Departamento Contábil</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Contabilidade completa com escrituração, balanços, demonstrações financeiras e relatórios gerenciais.
+                    </p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="service-card card-hover p-8 rounded-xl fade-in">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-users service-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-graphite mb-3">Departamento Pessoal</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Gestão completa de folha de pagamento, eSocial, férias, 13º salário e todas as obrigações trabalhistas.
+                    </p>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="service-card card-hover p-8 rounded-xl fade-in">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-tools service-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-graphite mb-3">Regularização Empresarial</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Regularização de pendências fiscais, trabalhistas e contábeis, garantindo a conformidade da sua empresa.
+                    </p>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="service-card card-hover p-8 rounded-xl fade-in">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-lightbulb service-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-graphite mb-3">Consultoria Financeira</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Análise financeira estratégica, planejamento tributário e orientação para tomada de decisões empresariais.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3 - SOBRE NÓS -->
+    <section id="sobre" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="section-title text-4xl md:text-5xl mb-4">Sobre <span class="section-title-gold">Nós</span></h2>
+                    <div class="gold-line"></div>
+                </div>
+                
+                <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-12 fade-in border border-gold" style="border-width: 1px; border-color: rgba(207, 163, 68, 0.3);">
+                    <p class="text-lg text-gray-700 leading-relaxed text-center">
+                        A <span class="font-bold text-gold">TK Assessoria Empresarial</span> nasceu do desejo de simplificar a vida de empreendedores, oferecendo gestão contábil clara e moderna. Nossa equipe atua com foco em <span class="font-semibold text-gold">transparência</span>, <span class="font-semibold text-gold">agilidade</span> e <span class="font-semibold text-gold">soluções inteligentes</span>.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Missão -->
+                    <div class="service-card p-8 rounded-xl text-center card-hover fade-in">
+                        <div class="text-5xl mb-4">
+                            <i class="fas fa-bullseye service-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-graphite mb-4">Missão</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Oferecer serviços contábeis de excelência, proporcionando tranquilidade e crescimento sustentável para nossos clientes.
+                        </p>
+                    </div>
+                    
+                    <!-- Visão -->
+                    <div class="service-card p-8 rounded-xl text-center card-hover fade-in">
+                        <div class="text-5xl mb-4">
+                            <i class="fas fa-eye service-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-graphite mb-4">Visão</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ser referência em contabilidade empresarial, reconhecida pela inovação, ética e resultados excepcionais.
+                        </p>
+                    </div>
+                    
+                    <!-- Valores -->
+                    <div class="service-card p-8 rounded-xl text-center card-hover fade-in">
+                        <div class="text-5xl mb-4">
+                            <i class="fas fa-heart service-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-graphite mb-4">Valores</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Transparência, comprometimento, inovação, ética e foco no cliente são os pilares que guiam nosso trabalho diário.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4 - CONTATO -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="section-title text-4xl md:text-5xl mb-4">Fale com a <span class="section-title-gold">gente!</span></h2>
+                <div class="gold-line"></div>
+                <p class="text-xl text-gray-600 mt-6">
+                    Estamos prontos para atender você
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5543999951500?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20TK%20Contabilidade." 
+                       target="_blank"
+                       class="contact-card p-8 rounded-xl text-center fade-in">
+                        <div class="text-5xl mb-4">
+                            <i class="fab fa-whatsapp contact-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-graphite">WhatsApp</h3>
+                        <p class="text-sm text-gray-600">4399995-1500</p>
+                    </a>
+                    
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/tkcontabilidade" 
+                       target="_blank"
+                       class="contact-card p-8 rounded-xl text-center fade-in">
+                        <div class="text-5xl mb-4">
+                            <i class="fab fa-instagram contact-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-graphite">Instagram</h3>
+                        <p class="text-sm text-gray-600">@tkcontabilidade</p>
+                    </a>
+                    
+                    <!-- Email -->
+                    <a href="mailto:Marcoscp18@hotmail.com" 
+                       class="contact-card p-8 rounded-xl text-center fade-in">
+                        <div class="text-5xl mb-4">
+                            <i class="fas fa-envelope contact-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-graphite">Email</h3>
+                        <p class="text-sm text-gray-600 break-words text-center">Marcoscp18@hotmail.com</p>
+                    </a>
+                    
+                    <!-- Localização -->
+                    <div class="contact-card p-8 rounded-xl text-center fade-in">
+                        <div class="text-5xl mb-4">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-graphite">Localização</h3>
+                        <p class="text-sm text-gray-600">Londrina, PR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-premium py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
+                <!-- Informações -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">TK Assessoria Empresarial</h3>
+                    <p class="mb-4 leading-relaxed">
+                        Av. Custódio Venâncio Ribeiro 150<br>
+                        Londrina - PR<br>
+                        CEP: 86037-890
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-2 text-gold"></i> <a href="tel:+5543999951500">(43)99995-1500</a><br>
+                        <i class="fas fa-envelope mr-2 text-gold"></i> <a href="mailto:Marcoscp18@hotmail.com">Marcoscp18@hotmail.com</a>
+                    </p>
+                </div>
+                
+                <!-- Mapa -->
+                <div style="width: 100%; height: 350px; margin-top: 40px; border-radius: 12px; overflow: hidden;">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        style="border:0"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.203990010606!2d-51.112145!3d-23.3063398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb43f21f0a2781%3A0x15789f397648032a!2sAv.%20Cust%C3%B3dio%20Ven%C3%A2ncio%20Ribeiro%2C%20150%20-%20Pioneiros%2C%20Londrina%20-%20PR%2C%2086037-890!5e0!3m2!1spt-BR!2sbr!4v1701234567890">
+                    </iframe>
+                </div>
+                
+            
+            <div class="border-t pt-8 text-center" style="border-color: rgba(207, 163, 68, 0.3);">
+                <p>
+                    &copy; 2025 TK Assessoria Empresarial. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5543999951500?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20TK%20Contabilidade." 
+       target="_blank"
+       class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
