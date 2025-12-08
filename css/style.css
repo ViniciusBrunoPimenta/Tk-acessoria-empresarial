@@ -1,128 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Variáveis de Cores Premium */
+/* ============================================
+   VARIÁVEIS - TK DOURADO
+   ============================================ */
 :root {
-    --gold: #CFA344;
-    --gold-dark: #b88c2c;
-    --gold-light: #D4AF37;
+    --gold-primary: #D4AF37;
+    --gold-secondary: #CFA344;
+    --black: #000000;
     --graphite: #111111;
+    --graphite-light: #1A1A1A;
     --white: #FFFFFF;
-    --gray-light: #F5F5F5;
+    --text-light: #E5E5E5;
+    --text-gray: #B0B0B0;
 }
 
-/* Tipografia */
+/* ============================================
+   TIPOGRAFIA
+   ============================================ */
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
-    color: var(--graphite);
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 body {
-    background-color: var(--white);
-    color: var(--graphite);
+    background: linear-gradient(180deg, var(--black) 0%, var(--graphite) 100%);
+    color: var(--text-light);
+    min-height: 100vh;
 }
 
 .smooth-scroll {
     scroll-behavior: smooth;
 }
 
-/* Navbar Premium */
+/* ============================================
+   NAVBAR - HEADER FIXO PRETO
+   ============================================ */
 .navbar {
+    background-color: var(--black);
+    border-bottom: 1px solid var(--gold-primary);
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.1);
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.98);
-    border-bottom: 1px solid var(--gold);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-scrolled {
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.99);
-}
-
-.navbar a {
-    color: var(--graphite);
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-
-.navbar a:hover {
-    color: var(--gold);
+    box-shadow: 0 4px 30px rgba(212, 175, 55, 0.15);
+    background-color: rgba(0, 0, 0, 0.98);
 }
 
 .navbar-logo {
     height: 50px;
     width: auto;
+    filter: brightness(1.1);
 }
 
-/* Linha Dourada Decorativa */
-.gold-line {
-    height: 2px;
-    width: 100px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    margin: 1rem auto;
-}
-
-.gold-line-full {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    margin: 1.5rem 0;
-}
-
-/* Cards Premium */
-.card-hover {
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid rgba(207, 163, 68, 0.2);
-}
-
-.card-hover:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(207, 163, 68, 0.15);
-    border-color: var(--gold);
-}
-
-.service-card {
-    background: var(--white);
-    border: 1px solid rgba(207, 163, 68, 0.2);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.service-card:hover {
-    box-shadow: 0 20px 40px rgba(207, 163, 68, 0.2);
-}
-
-.service-icon {
-    color: var(--gold);
+.navbar a {
+    color: var(--text-light);
     transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
 }
 
-.card-hover:hover .service-icon {
-    transform: scale(1.1);
-    color: var(--gold-dark);
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--gold-primary);
+    transition: width 0.3s ease;
 }
 
-/* Botões Premium */
-.btn-gold {
-    background-color: var(--gold);
+.navbar a:hover {
+    color: var(--gold-primary);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar span {
+    color: var(--text-light);
+}
+
+/* ============================================
+   HERO - SEÇÃO PRINCIPAL
+   ============================================ */
+#home {
+    background: linear-gradient(135deg, var(--black) 0%, var(--graphite) 50%, var(--black) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image-subtle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-image: url('../assets/hero-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    opacity: 0.08;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+#home h1 {
     color: var(--white);
+    text-shadow: 0 2px 20px rgba(212, 175, 55, 0.3);
+}
+
+#home .text-gold {
+    color: var(--gold-primary);
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5), 0 2px 10px rgba(212, 175, 55, 0.3);
+}
+
+#home p {
+    color: var(--text-light);
+}
+
+/* ============================================
+   BOTÕES PREMIUM
+   ============================================ */
+.btn-gold {
+    background-color: var(--graphite);
+    color: var(--gold-primary);
     padding: 14px 32px;
     font-weight: 600;
     border-radius: 8px;
+    border: 1px solid var(--gold-primary);
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 4px 15px rgba(207, 163, 68, 0.3);
-    border: 2px solid var(--gold);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-gold:hover {
-    background-color: var(--gold-dark);
-    border-color: var(--gold-dark);
+    background-color: var(--gold-primary);
+    color: var(--black);
+    border-color: var(--gold-primary);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(207, 163, 68, 0.4);
-    color: var(--white);
+    box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
 }
 
 .btn-whats {
@@ -131,35 +163,123 @@ body {
     padding: 14px 32px;
     font-weight: 600;
     border-radius: 8px;
+    border: 1px solid #25d366;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    border: 2px solid #25d366;
     box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .btn-whats:hover {
     background-color: #20ba5a;
-    border-color: #ffffff;
+    border-color: #20ba5a;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
 }
 
-/* Títulos Premium */
-.section-title {
-    color: var(--graphite);
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+/* ============================================
+   SEÇÕES GERAIS
+   ============================================ */
+section {
+    background: linear-gradient(180deg, var(--black) 0%, var(--graphite) 100%);
     position: relative;
 }
 
-.section-title-gold {
-    color: var(--gold);
+.section-title {
+    color: var(--white);
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
-/* Animações */
+.section-title-gold {
+    color: var(--gold-primary);
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.gold-line {
+    height: 1px;
+    width: 100px;
+    background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+    margin: 1.5rem auto;
+}
+
+/* ============================================
+   CARDS DE SERVIÇOS
+   ============================================ */
+.service-card {
+    background: var(--graphite);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    color: var(--text-light);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-card:hover {
+    border-color: var(--gold-primary);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+    background: var(--graphite-light);
+}
+
+.service-icon {
+    color: var(--gold-primary);
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+}
+
+.card-hover:hover .service-icon {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8));
+}
+
+.service-card h3 {
+    color: var(--white);
+}
+
+.service-card p {
+    color: var(--text-gray);
+}
+
+/* ============================================
+   CARDS DE CONTATO
+   ============================================ */
+.contact-card {
+    background: var(--graphite);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    color: var(--text-light);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card:hover {
+    border-color: var(--gold-primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    background: var(--graphite-light);
+}
+
+.contact-icon {
+    color: var(--gold-primary);
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.5));
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8));
+}
+
+.contact-card h3 {
+    color: var(--white);
+}
+
+.contact-card p {
+    color: var(--text-gray);
+}
+
+/* ============================================
+   ANIMAÇÕES
+   ============================================ */
 .fade-in {
     animation: fadeIn 0.8s ease-in;
 }
@@ -175,30 +295,13 @@ body {
     }
 }
 
-@keyframes shimmer {
-    0% {
-        background-position: -1000px 0;
-    }
-    100% {
-        background-position: 1000px 0;
-    }
+.card-hover {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.gold-shimmer {
-    background: linear-gradient(
-        90deg,
-        var(--gold) 0%,
-        var(--gold-light) 50%,
-        var(--gold) 100%
-    );
-    background-size: 2000px 100%;
-    animation: shimmer 3s infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-/* WhatsApp Float */
+/* ============================================
+   WHATSAPP FLOAT
+   ============================================ */
 .whatsapp-float {
     position: fixed;
     width: 60px;
@@ -219,94 +322,75 @@ body {
 }
 
 .whatsapp-float:hover {
-    background-color: #ffffff;
+    background-color: #20ba5a;
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
 }
 
-/* Hero Section Premium */
-.hero-bg-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    opacity: 0.08;
-    background-image: url('../assets/hero-background.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right center;
-    z-index: 0;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-}
-
-/* Cards de Contato Premium */
-.contact-card {
-    background: var(--white);
-    border: 1px solid rgba(207, 163, 68, 0.2);
-    color: var(--graphite);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.contact-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(207, 163, 68, 0.2);
-}
-
-.contact-icon {
-    color: var(--gold);
-    transition: all 0.3s ease;
-}
-
-.contact-card:hover .contact-icon {
-    transform: scale(1.15);
-    color: var(--gold-dark);
-}
-
-/* Footer Premium */
+/* ============================================
+   FOOTER PREMIUM
+   ============================================ */
 .footer-premium {
-    background-color: var(--graphite);
-    color: var(--white);
-    border-top: 2px solid var(--gold);
+    background-color: var(--black);
+    color: var(--text-light);
+    border-top: 1px solid var(--gold-primary);
 }
 
 .footer-premium h3 {
-    color: var(--gold);
+    color: var(--gold-primary);
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
 .footer-premium a {
-    color: var(--gold);
+    color: var(--gold-primary);
     transition: all 0.3s ease;
 }
 
 .footer-premium a:hover {
-    color: var(--gold-light);
+    color: var(--gold-secondary);
     text-decoration: underline;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
 }
 
 .footer-premium p {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-gray);
 }
 
-/* Texto Dourado */
+.footer-premium i {
+    color: var(--gold-primary);
+}
+
+/* ============================================
+   UTILITÁRIOS
+   ============================================ */
 .text-gold {
-    color: var(--gold) !important;
+    color: var(--gold-primary) !important;
 }
 
 .text-graphite {
     color: var(--graphite) !important;
 }
 
-/* Responsividade */
+.gold-glow {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5), 0 2px 10px rgba(212, 175, 55, 0.3);
+    transition: all 0.3s ease;
+}
+
+.gold-glow:hover {
+    text-shadow: 0 0 30px rgba(212, 175, 55, 0.7), 0 2px 15px rgba(212, 175, 55, 0.5);
+}
+
+.bg-graphite {
+    background-color: var(--graphite) !important;
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
 @media (max-width: 768px) {
-    .hero-bg-image {
+    .hero-image-subtle {
         width: 100%;
         opacity: 0.05;
     }
@@ -314,13 +398,103 @@ body {
     .navbar-logo {
         height: 40px;
     }
+    
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .btn-gold,
+    .btn-whats {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
 }
 
-/* Efeito de brilho dourado no hover */
-.gold-glow {
+/* ============================================
+   ESPAÇO NEGATIVO PREMIUM
+   ============================================ */
+section {
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ============================================
+   DETALHES FINAIS PREMIUM
+   ============================================ */
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold-primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold-secondary);
+}
+
+/* Seleção de texto */
+::selection {
+    background: var(--gold-primary);
+    color: var(--black);
+}
+
+/* Links gerais */
+a {
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.gold-glow:hover {
-    text-shadow: 0 0 10px rgba(207, 163, 68, 0.5);
+/* Melhorias visuais */
+.rounded-xl {
+    border-radius: 12px;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajustes para seção Sobre Nós */
+#sobre {
+    background: linear-gradient(180deg, var(--graphite) 0%, var(--black) 100%);
+}
+
+#sobre .service-card {
+    background: var(--graphite-light);
+}
+
+#sobre .bg-white {
+    background: var(--graphite) !important;
+    border-color: rgba(212, 175, 55, 0.3) !important;
+    color: var(--text-light) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+#sobre .bg-white p {
+    color: var(--text-gray) !important;
+}
+
+#sobre .bg-white span {
+    color: var(--gold-primary) !important;
+}
+
+/* Ajuste para card de texto central na seção Sobre */
+#sobre .bg-white p span.text-gold {
+    color: var(--gold-primary) !important;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
 }

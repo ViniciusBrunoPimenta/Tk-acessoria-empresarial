@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="smooth-scroll bg-white">
+<body class="smooth-scroll">
     
     <!-- NAVBAR FIXO -->
     <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -17,8 +17,8 @@
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
                     <img src="assets/logo-tk.png" alt="TK Assessoria Empresarial" class="navbar-logo" id="logo-img" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';">
-                    <h1 class="text-2xl font-bold text-gold" id="logo-text" style="display: none;">TK</h1>
-                    <span class="text-sm font-semibold text-graphite hidden sm:inline">Assessoria Empresarial</span>
+                    <h1 class="text-2xl font-bold text-gold" id="logo-text" style="display: none;">Tokyo</h1>
+                    <span class="text-sm font-semibold hidden sm:inline">Assessoria Empresarial</span>
                 </div>
                 
                 <!-- Menu -->
@@ -30,7 +30,7 @@
                 </div>
                 
                 <!-- Menu Mobile -->
-                <button id="mobile-menu-btn" class="md:hidden text-graphite">
+                <button id="mobile-menu-btn" class="md:hidden">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -46,14 +46,14 @@
     </nav>
 
     <!-- SEÇÃO 1 - HERO -->
-    <section id="home" class="pt-32 pb-20 bg-white min-h-screen flex items-center relative">
-        <div class="container mx-auto px-6">
+    <section id="home" class="pt-32 pb-20 min-h-screen flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-6 hero-content">
             <div class="max-w-4xl mx-auto text-center fade-in">
                 <h1 class="text-5xl md:text-7xl font-bold mb-6">
-                    <span class="text-graphite">TK Contabilidade</span><br>
+                    <span>Tokyo Assessoria </span><br>
                     <span class="text-gold gold-glow">Empresarial</span>
                 </h1>
-                <p class="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed font-light">
+                <p class="text-xl md:text-2xl mb-10 leading-relaxed font-light">
                     Cuidando da sua empresa com <span class="font-semibold text-gold">precisão</span>, 
                     <span class="font-semibold text-gold">transparência</span> e 
                     <span class="font-semibold text-gold">confiança</span>.
@@ -74,12 +74,12 @@
     </section>
 
     <!-- SEÇÃO 2 - NOSSOS SERVIÇOS -->
-    <section id="servicos" class="py-20 bg-white">
+    <section id="servicos" class="py-20">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 fade-in">
                 <h2 class="section-title text-4xl md:text-5xl mb-4">Nossos <span class="section-title-gold">Serviços</span></h2>
                 <div class="gold-line"></div>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto mt-6">
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto mt-6">
                     Soluções completas para o sucesso da sua empresa
                 </p>
             </div>
@@ -90,8 +90,8 @@
                     <div class="text-5xl mb-4">
                         <i class="fas fa-building service-icon"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-graphite mb-3">Abertura de Empresas</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-2xl font-bold mb-3">Abertura de Empresas</h3>
+                    <p class="leading-relaxed">
                         Processo completo de abertura de empresa, desde a escolha do melhor enquadramento até a obtenção de todas as licenças necessárias.
                     </p>
                 </div>
@@ -101,8 +101,8 @@
                     <div class="text-5xl mb-4">
                         <i class="fas fa-chart-line service-icon"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-graphite mb-3">Departamento Fiscal</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-2xl font-bold mb-3">Departamento Fiscal</h3>
+                    <p class="leading-relaxed">
                         Gestão completa de obrigações fiscais, apuração de impostos e entrega de declarações dentro dos prazos legais.
                     </p>
                 </div>
@@ -112,8 +112,8 @@
                     <div class="text-5xl mb-4">
                         <i class="fas fa-file-invoice-dollar service-icon"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-graphite mb-3">Departamento Contábil</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-2xl font-bold mb-3">Departamento Contábil</h3>
+                    <p class="leading-relaxed">
                         Contabilidade completa com escrituração, balanços, demonstrações financeiras e relatórios gerenciais.
                     </p>
                 </div>
@@ -123,8 +123,8 @@
                     <div class="text-5xl mb-4">
                         <i class="fas fa-users service-icon"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-graphite mb-3">Departamento Pessoal</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-2xl font-bold mb-3">Departamento Pessoal</h3>
+                    <p class="leading-relaxed">
                         Gestão completa de folha de pagamento, eSocial, férias, 13º salário e todas as obrigações trabalhistas.
                     </p>
                 </div>
@@ -134,8 +134,8 @@
                     <div class="text-5xl mb-4">
                         <i class="fas fa-tools service-icon"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-graphite mb-3">Regularização Empresarial</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-2xl font-bold mb-3">Regularização Empresarial</h3>
+                    <p class="leading-relaxed">
                         Regularização de pendências fiscais, trabalhistas e contábeis, garantindo a conformidade da sua empresa.
                     </p>
                 </div>
@@ -145,8 +145,8 @@
                     <div class="text-5xl mb-4">
                         <i class="fas fa-lightbulb service-icon"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-graphite mb-3">Consultoria Financeira</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                    <h3 class="text-2xl font-bold mb-3">Consultoria Financeira</h3>
+                    <p class="leading-relaxed">
                         Análise financeira estratégica, planejamento tributário e orientação para tomada de decisões empresariais.
                     </p>
                 </div>
@@ -155,7 +155,7 @@
     </section>
 
     <!-- SEÇÃO 3 - SOBRE NÓS -->
-    <section id="sobre" class="py-20 bg-gray-50">
+    <section id="sobre" class="py-20">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16 fade-in">
@@ -163,8 +163,8 @@
                     <div class="gold-line"></div>
                 </div>
                 
-                <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-12 fade-in border border-gold" style="border-width: 1px; border-color: rgba(207, 163, 68, 0.3);">
-                    <p class="text-lg text-gray-700 leading-relaxed text-center">
+                <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-12 fade-in border border-gold" style="border-width: 1px; border-color: rgba(212, 175, 55, 0.3);">
+                    <p class="text-lg leading-relaxed text-center">
                         A <span class="font-bold text-gold">TK Assessoria Empresarial</span> nasceu do desejo de simplificar a vida de empreendedores, oferecendo gestão contábil clara e moderna. Nossa equipe atua com foco em <span class="font-semibold text-gold">transparência</span>, <span class="font-semibold text-gold">agilidade</span> e <span class="font-semibold text-gold">soluções inteligentes</span>.
                     </p>
                 </div>
@@ -175,8 +175,8 @@
                         <div class="text-5xl mb-4">
                             <i class="fas fa-bullseye service-icon"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-graphite mb-4">Missão</h3>
-                        <p class="text-gray-600 leading-relaxed">
+                        <h3 class="text-2xl font-bold mb-4">Missão</h3>
+                        <p class="leading-relaxed">
                             Oferecer serviços contábeis de excelência, proporcionando tranquilidade e crescimento sustentável para nossos clientes.
                         </p>
                     </div>
@@ -186,8 +186,8 @@
                         <div class="text-5xl mb-4">
                             <i class="fas fa-eye service-icon"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-graphite mb-4">Visão</h3>
-                        <p class="text-gray-600 leading-relaxed">
+                        <h3 class="text-2xl font-bold mb-4">Visão</h3>
+                        <p class="leading-relaxed">
                             Ser referência em contabilidade empresarial, reconhecida pela inovação, ética e resultados excepcionais.
                         </p>
                     </div>
@@ -197,8 +197,8 @@
                         <div class="text-5xl mb-4">
                             <i class="fas fa-heart service-icon"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-graphite mb-4">Valores</h3>
-                        <p class="text-gray-600 leading-relaxed">
+                        <h3 class="text-2xl font-bold mb-4">Valores</h3>
+                        <p class="leading-relaxed">
                             Transparência, comprometimento, inovação, ética e foco no cliente são os pilares que guiam nosso trabalho diário.
                         </p>
                     </div>
@@ -208,12 +208,12 @@
     </section>
 
     <!-- SEÇÃO 4 - CONTATO -->
-    <section id="contato" class="py-20 bg-white">
+    <section id="contato" class="py-20">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 fade-in">
                 <h2 class="section-title text-4xl md:text-5xl mb-4">Fale com a <span class="section-title-gold">gente!</span></h2>
                 <div class="gold-line"></div>
-                <p class="text-xl text-gray-600 mt-6">
+                <p class="text-xl text-gray-300 mt-6">
                     Estamos prontos para atender você
                 </p>
             </div>
@@ -227,8 +227,8 @@
                         <div class="text-5xl mb-4">
                             <i class="fab fa-whatsapp contact-icon"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-graphite">WhatsApp</h3>
-                        <p class="text-sm text-gray-600">4399995-1500</p>
+                        <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                        <p class="text-sm">4399995-1500</p>
                     </a>
                     
                     <!-- Instagram -->
@@ -238,8 +238,8 @@
                         <div class="text-5xl mb-4">
                             <i class="fab fa-instagram contact-icon"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-graphite">Instagram</h3>
-                        <p class="text-sm text-gray-600">@tkcontabilidade</p>
+                        <h3 class="text-xl font-bold mb-2">Instagram</h3>
+                        <p class="text-sm">@tkcontabilidade</p>
                     </a>
                     
                     <!-- Email -->
@@ -248,8 +248,8 @@
                         <div class="text-5xl mb-4">
                             <i class="fas fa-envelope contact-icon"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-graphite">Email</h3>
-                        <p class="text-sm text-gray-600 break-words text-center">Marcoscp18@hotmail.com</p>
+                        <h3 class="text-xl font-bold mb-2">Email</h3>
+                        <p class="text-sm break-words text-center">Marcoscp18@hotmail.com</p>
                     </a>
                     
                     <!-- Localização -->
@@ -257,8 +257,8 @@
                         <div class="text-5xl mb-4">
                             <i class="fas fa-map-marker-alt contact-icon"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-graphite">Localização</h3>
-                        <p class="text-sm text-gray-600">Londrina, PR</p>
+                        <h3 class="text-xl font-bold mb-2">Localização</h3>
+                        <p class="text-sm">Londrina, PR</p>
                     </div>
                 </div>
             </div>
