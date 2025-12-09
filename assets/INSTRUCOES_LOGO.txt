@@ -1,0 +1,15 @@
+INSTRUÇÕES PARA ADICIONAR O LOGO TK
+====================================
+
+1. Salve o logo da TK em formato PNG com fundo transparente
+2. Nomeie o arquivo como: "logo-tk.png"
+3. Coloque o arquivo na pasta "assets"
+4. O HTML já está configurado para usar: assets/logo-tk.png
+
+Se o logo não for encontrado, o site mostrará "TK" em texto dourado como fallback.
+
+Recomendações:
+- Logo com fundo transparente (PNG)
+- Altura recomendada: 50px (será ajustado automaticamente)
+- Formato: PNG com transparência
+
