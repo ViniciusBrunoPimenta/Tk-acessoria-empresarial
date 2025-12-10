@@ -16,8 +16,7 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <img src="assets/logo-tk.png" alt="TK Assessoria Empresarial" class="navbar-logo" id="logo-img" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';">
-                    <h1 class="text-2xl font-bold text-gold" id="logo-text" style="display: none;">Tokyo</h1>
+                    <h1 class="text-2xl font-bold text-gold">TOKYO</h1>
                     <span class="text-sm font-semibold hidden sm:inline">Assessoria Empresarial</span>
                 </div>
                 
@@ -25,6 +24,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="font-medium">Home</a>
                     <a href="#servicos" class="font-medium">Serviços</a>
+                    <a href="#equipe" class="font-medium">Equipe</a>
                     <a href="#sobre" class="font-medium">Sobre Nós</a>
                     <a href="#contato" class="font-medium">Contato</a>
                 </div>
@@ -153,6 +153,76 @@
             </div>
         </div>
     </section>
+    
+    <!-- SEÇÃO - EQUIPE -->
+    <section id="equipe" class="py-20">
+        <div class="container mx-auto px-6">
+            <!-- Título -->
+            <div class="text-center mb-16 fade-in">
+                <h2 class="section-title text-4xl md:text-5xl mb-4">
+                    Conheça a nossa <span class="section-title-gold">Equipe</span>
+                </h2>
+                <div class="gold-line"></div>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto mt-6">
+                    Profissionais especializados dedicados ao sucesso do seu negócio
+                </p>
+            </div>
+
+            <!-- Texto principal -->
+            <div class="team-intro card-hover rounded-xl shadow-lg bg-graphite mb-12 fade-in" style="padding: 2.5rem; border: 1px solid rgba(212,175,55,0.2);">
+                <p class="text-lg leading-relaxed text-center" style="color: var(--text-light); max-width: 900px; margin: 0 auto;">
+                    Temos uma equipe altamente especializada e preparada para oferecer soluções contábeis e financeiras
+                    estratégicas, seguras e totalmente alinhadas às necessidades da sua empresa.
+                </p>
+            </div>
+
+            <!-- Frase complementar inspiradora -->
+            <blockquote class="team-quote fade-in">
+                <i class="fas fa-quote-left text-gold mr-3" style="font-size: 1.5rem; opacity: 0.6;"></i>
+                "Grandes resultados nascem de profissionais que cuidam do seu negócio como se fosse deles."
+                <i class="fas fa-quote-right text-gold ml-3" style="font-size: 1.5rem; opacity: 0.6;"></i>
+            </blockquote>
+
+            <!-- Grid da equipe -->
+            <div class="team-grid mt-16 mb-12">
+                <!-- Sócio 1 -->
+                <article class="team-card card-hover fade-in">
+                    <div class="avatar">
+                        <img src="assets/marcos.png" alt="Marcos Alves" loading="lazy">
+                    </div>
+                    <h4 class="team-name">Marcos Alves</h4>
+                    <p class="team-role">Sócio e Contador</p>
+                    <div class="team-divider"></div>
+                    <p class="team-description">
+                        Especialista em abertura de empresas e gestão contábil, atua orientando empreendedores desde o primeiro passo, garantindo segurança jurídica, organização financeira e total conformidade contábil. Seu compromisso é transformar a burocracia em processos simples, eficientes e totalmente alinhados às necessidades do cliente.                    </p>
+                   
+                </article>
+
+                <!-- Sócio 2 -->
+                <article class="team-card card-hover fade-in">
+                    <div class="avatar">
+                        <img src="assets/socio2.png" alt="Sócio 2" loading="lazy" onerror="this.parentElement.classList.add('avatar-initials'); this.parentElement.setAttribute('data-initials', 'S2'); this.style.display='none';">
+                    </div>
+                    <h4 class="team-name">Paulo Duarte</h4>
+                    <p class="team-role">Sócio e Contador</p>
+                    <div class="team-divider"></div>
+                    <p class="team-description">
+                        Profissional focado em soluções fiscais e tributárias, oferecendo análises estratégicas que reduzem riscos, otimizam impostos e garantem total conformidade com a legislação. Trabalha de forma precisa e consultiva, ajudando empresas a alcançarem mais economia, segurança e inteligência na gestão tributária.                    </p>
+                    </p>
+                </article>
+            </div>
+
+            <!-- Botão de contato -->
+            <div class="team-cta fade-in">
+                <a href="https://wa.me/5543999951500?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20TK%20Contabilidade." 
+                   target="_blank" 
+                   class="btn-gold">
+                    <i class="fab fa-whatsapp mr-2"></i> Entre em contato
+                </a>
+            </div>
+        </div>
+    </section>
+
 
     <!-- SEÇÃO 3 - SOBRE NÓS -->
     <section id="sobre" class="py-20">
@@ -219,7 +289,7 @@
             </div>
             
             <div class="max-w-4xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- WhatsApp -->
                     <a href="https://wa.me/5543999951500?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20TK%20Contabilidade." 
                        target="_blank"
@@ -228,10 +298,12 @@
                             <i class="fab fa-whatsapp contact-icon"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
-                        <p class="text-sm">4399995-1500</p>
+                        <p class="text-sm">+55 (43) 99995-1500</p>
+                    </p>
                     </a>
                     
                     <!-- Instagram -->
+                    <!--
                     <a href="https://instagram.com/tkcontabilidade" 
                        target="_blank"
                        class="contact-card p-8 rounded-xl text-center fade-in">
@@ -241,6 +313,7 @@
                         <h3 class="text-xl font-bold mb-2">Instagram</h3>
                         <p class="text-sm">@tkcontabilidade</p>
                     </a>
+                    -->
                     
                     <!-- Email -->
                     <a href="mailto:Marcoscp18@hotmail.com" 
@@ -278,7 +351,7 @@
                         CEP: 86037-890
                     </p>
                     <p>
-                        <i class="fas fa-phone mr-2 text-gold"></i> <a href="tel:+5543999951500">(43)99995-1500</a><br>
+                        <i class="fas fa-phone mr-2 text-gold"></i> <a href="tel:+5543999951500">+55 (43) 99995-1500</a><br>
                         <i class="fas fa-envelope mr-2 text-gold"></i> <a href="mailto:Marcoscp18@hotmail.com">Marcoscp18@hotmail.com</a>
                     </p>
                 </div>
